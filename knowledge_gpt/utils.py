@@ -1,6 +1,7 @@
 import re
 from io import BytesIO
 from typing import Any, Dict, List
+# 3.9
 from typing import Union, List
 
 import docx2txt
@@ -54,6 +55,7 @@ def parse_txt(file: BytesIO) -> str:
 
 @st.cache(allow_output_mutation=True)
 # def text_to_docs(text: str | List[str]) -> List[Document]:
+# 3.9
 def text_to_docs(text: Union[str, List[str]]) -> List[Document]:
 
     """Converts a string or list of strings to a list of Documents
