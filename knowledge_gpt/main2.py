@@ -17,7 +17,7 @@ button = """
 	<script>window.onload = function () { CustomGPT.init({p_id: "1824", p_key: "50a7b1a9e4e384f4b1284a5aa074770f" }); };</script>"""
 
 components.html(button, 
-	height=600,)
+	height=800,)
 
 st.markdown(
     """
@@ -47,7 +47,9 @@ st.markdown(
 # 	""",
 #     height=500,
 # )
-
+# Display the image with text on top
+st.write("Each document costs about $1 for OpenAI API call. Please consider pay to keep this service alive! Thank you!")
+st.write("每篇文章调用OpenAI API的费用约为¥7人民币，请帮助支付以便我能够一直提供这个AI小程序，谢谢您！")
 
 # Construct the file path dynamically
 #image_path = os.path.abspath("docgpt.jpg")
@@ -83,6 +85,4 @@ with col2:
 # 	height=800,
 # 	)
 
-# Display the image with text on top
-st.write("Each document costs about $1 for OpenAI API call. Please consider pay to keep this service alive! Thank you!")
-st.write("每篇文章调用OpenAI API的费用约为¥7人民币，请帮助支付以便我能够一直提供这个AI小程序，谢谢您！")
+
