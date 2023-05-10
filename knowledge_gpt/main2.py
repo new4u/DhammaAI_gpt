@@ -16,12 +16,13 @@ button = """
 
 	<script>window.onload = function () { CustomGPT.init({p_id: "1824", p_key: "50a7b1a9e4e384f4b1284a5aa074770f" }); };</script>"""
 
-components.html(button, height=70, width=220,)
+components.html(button, 
+	height=800,)
 
 st.markdown(
     """
     <style>
-        iframe[width="220"] {
+        iframe[width=100%] {
             position: fixed;
             bottom: 60px;
             right: 40px;
