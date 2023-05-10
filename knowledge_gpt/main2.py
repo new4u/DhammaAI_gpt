@@ -61,7 +61,8 @@ with col3:
 
 	<script>window.onload = function () { CustomGPT.init({p_id: "1824", p_key: "50a7b1a9e4e384f4b1284a5aa074770f" }); };</script>
 	""",
-	height=500,
+	width=200,
+	height=800,
 	)
 
 # Display the image with text on top
