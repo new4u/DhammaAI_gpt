@@ -17,15 +17,15 @@ button = """
 	<script>window.onload = function () { CustomGPT.init({p_id: "1824", p_key: "50a7b1a9e4e384f4b1284a5aa074770f" }); };</script>"""
 
 components.html(button, 
-	height=800,)
+	height=600,)
 
 st.markdown(
     """
     <style>
         iframe[width=100%] {
             position: fixed;
-            bottom: 60px;
-            right: 40px;
+            bottom: 160px;
+            right: 140px;
         }
     </style>
     """,
