@@ -64,7 +64,7 @@ image2 = Image.open("knowledge_gpt/paypalqrcode.png")
 #st.image(img, caption=None, width=200)
 
 # Divide the app page into two columns
-col1, col2, col3= st.columns(3)
+col1, col2= st.columns(2)
 
 # Display the first image in the first column
 with col1:
@@ -73,15 +73,15 @@ with col1:
 # Display the second image in the second column
 with col2:
     st.image(image2, caption="PayPal", width=200)
-with col3:
-	components.html(
-	"""
-	<script src="https://cdn.customgpt.ai/js/chat.js"></script>
+# with col3:
+# 	components.html(
+# 	"""
+# 	<script src="https://cdn.customgpt.ai/js/chat.js"></script>
 
-	<script>window.onload = function () { CustomGPT.init({p_id: "1824", p_key: "50a7b1a9e4e384f4b1284a5aa074770f" }); };</script>
-	""",
-	height=800,
-	)
+# 	<script>window.onload = function () { CustomGPT.init({p_id: "1824", p_key: "50a7b1a9e4e384f4b1284a5aa074770f" }); };</script>
+# 	""",
+# 	height=800,
+# 	)
 
 # Display the image with text on top
 st.write("Each document costs about $1 for OpenAI API call. Please consider pay to keep this service alive! Thank you!")
