@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 import os
-from knowledge_gpt.components.sidebar import sidebar
+# from knowledge_gpt.components.sidebar import sidebar
 import streamlit.components.v1 as components
 from openai.error import OpenAIError
 
