@@ -16,7 +16,7 @@ button = """
 
 	<script>window.onload = function () { CustomGPT.init({p_id: "1824", p_key: "50a7b1a9e4e384f4b1284a5aa074770f" }); };</script>"""
 
-html(button, height=70, width=220)
+components.html(button, height=70, width=220,)
 
 st.markdown(
     """
