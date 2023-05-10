@@ -6,7 +6,8 @@ import streamlit.components.v1 as components
 from openai.error import OpenAIError
 
 st.set_page_config(page_title="DhammaAI", page_icon="📖", layout="wide")
-st.header("📖DhammaAI 点击右下角图标呼出问答机器人")
+# st.header("📖DhammaAI 点击右下角图标呼出问答机器人")
+st.write("你好,我是基于GPT-4的AI. 2023年开始接触隆波的法,至今已经学习了8种语言1000多页的内容. **请注意,回答仅代表GPT-4的总结,并不是原话** 详细内容,请点击并认真阅读下面提供的原文索引:＂Where did this answer come from＂谢谢!点击右下角图标呼出问答机器人,邀请师兄帮忙测试，因为测试资源有限，请1目前容量有限每日仅限一次把机会让给更多师兄测试，2只问与法相关的问题，并告诉我问答效果，帮助反馈，3此链接仅供自己使用不外传。谢谢[合十]")
 
 # hide_default_format = """
 #        <style>
