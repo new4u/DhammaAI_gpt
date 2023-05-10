@@ -1,13 +1,18 @@
 import streamlit as st
 from PIL import Image
 import os
-from openai.error import OpenAIError
+from knowledge_gpt.components.sidebar import sidebar
 import streamlit.components.v1 as components
 
 
 st.set_page_config(page_title="DhammaAI", page_icon="📖", layout="wide")
 st.header("📖DhammaAI")
-
+hide_default_format = """
+       <style>
+       #MainMenu {visibility: hidden; }
+       footer {visibility: hidden;}
+       </style>
+       """
 
 button = """
 <script src="https://cdn.customgpt.ai/js/chat.js"></script>
@@ -29,6 +34,7 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+sidebar()
 # hide_default_format = """
 #        <style>
 #        #MainMenu {visibility: hidden; }
