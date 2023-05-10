@@ -5,7 +5,11 @@ import os
 import streamlit.components.v1 as components
 from openai.error import OpenAIError
 
-st.set_page_config(page_title="DhammaAI", page_icon="📖", layout="wide")
+st.set_page_config(page_title="DhammaAI", page_icon="📖", layout="wide",,menu_items={
+        'Get Help': 'https://www.extremelycoolapp.com/help',
+        'Report a bug': "https://www.extremelycoolapp.com/bug",
+        'About': "# This is a header. This is an *extremely* cool app!"
+    })
 st.header("📖DhammaAI")
 # hide_default_format = """
 #        <style>
@@ -34,7 +38,7 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
-sidebar()
+# sidebar()
 # hide_default_format = """
 #        <style>
 #        #MainMenu {visibility: hidden; }
