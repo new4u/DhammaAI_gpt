@@ -4,25 +4,11 @@ import os
 from openai.error import OpenAIError
 import streamlit.components.v1 as components
 
-from knowledge_gpt.utils import (
-    embed_docs,
-    get_answer,
-    get_sources,
-    parse_docx,
-    parse_pdf,
-    parse_txt,
-    search_docs,
-    text_to_docs,
-    wrap_text_in_html,
-)
 
 
-def clear_submit():
-    st.session_state["submit"] = False
 
-
-st.set_page_config(page_title="DocGPT", page_icon="📖", layout="wide")
-st.header("📖DocGPT")
+st.set_page_config(page_title="DhammaAI", page_icon="📖", layout="wide")
+st.header("📖DhammaAI")
 
 
 
@@ -34,6 +20,22 @@ st.header("📖DocGPT")
 #        """
 # st.markdown(hide_default_format, unsafe_allow_html=True)
 
+# components.html(
+#    """
+# <div id="customgpt_chat"></div>
+
+# <script src="https://cdn.customgpt.ai/js/embed.js" width="100%" p_id="1824" p_key="50a7b1a9e4e384f4b1284a5aa074770f" div_id="customgpt_chat"></script>
+# 	""",
+#     height=500,
+# )
+components.html(
+	"""
+	<script src="https://cdn.customgpt.ai/js/chat.js"></script>
+
+<script>window.onload = function () { CustomGPT.init({p_id: "1824", p_key: "50a7b1a9e4e384f4b1284a5aa074770f" }); };</script>
+	""",
+	height=500,
+)
 
 
 # Construct the file path dynamically
@@ -53,7 +55,7 @@ st.write("每篇文章调用OpenAI API的费用约为¥7人民币，请帮助支
 #st.image(img, caption=None, width=200)
 
 # Divide the app page into two columns
-col1, col2 = st.columns(2)
+col1, col2, col3= st.columns(3)
 
 # Display the first image in the first column
 with col1:
@@ -62,20 +64,14 @@ with col1:
 # Display the second image in the second column
 with col2:
     st.image(image2, caption="PayPal", width=200)
-
-# components.html(
-#    """
-# <div id="customgpt_chat"></div>
-
-# <script src="https://cdn.customgpt.ai/js/embed.js" width="100%" p_id="1824" p_key="50a7b1a9e4e384f4b1284a5aa074770f" div_id="customgpt_chat"></script>
-# 	""",
-#     height=500,
-# )
-components.html(
+with col3:
+	components.html(
 	"""
 	<script src="https://cdn.customgpt.ai/js/chat.js"></script>
 
-<script>window.onload = function () { CustomGPT.init({p_id: "1824", p_key: "50a7b1a9e4e384f4b1284a5aa074770f" }); };</script>
+	<script>window.onload = function () { CustomGPT.init({p_id: "1824", p_key: "50a7b1a9e4e384f4b1284a5aa074770f" }); };</script>
 	""",
-	height=1000,
-)
+	height=500,
+	)
+
+
