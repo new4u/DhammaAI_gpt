@@ -66,13 +66,16 @@ with col2:
 components.html(
    """
 <div id="customgpt_chat"></div>
-<script src="https://cdn.customgpt.ai/js/embed.js" width="100%" height="500px" p_id="1824" p_key="50a7b1a9e4e384f4b1284a5aa074770f" div_id="customgpt_chat"></script>
-	"""
+
+<script src="https://cdn.customgpt.ai/js/embed.js" width="100%" p_id="1824" p_key="50a7b1a9e4e384f4b1284a5aa074770f" div_id="customgpt_chat"></script>
+	""",
+    height=500,
 )
 components.html(
 	"""
 	<script src="https://cdn.customgpt.ai/js/chat.js"></script>
 
 <script>window.onload = function () { CustomGPT.init({p_id: "1824", p_key: "50a7b1a9e4e384f4b1284a5aa074770f" }); };</script>
-	"""
+	""",
+	height=1000,
 )
