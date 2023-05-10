@@ -3,16 +3,16 @@ from PIL import Image
 import os
 from knowledge_gpt.components.sidebar import sidebar
 import streamlit.components.v1 as components
-
+from openai.error import OpenAIError
 
 st.set_page_config(page_title="DhammaAI", page_icon="📖", layout="wide")
 st.header("📖DhammaAI")
-hide_default_format = """
-       <style>
-       #MainMenu {visibility: hidden; }
-       footer {visibility: hidden;}
-       </style>
-       """
+# hide_default_format = """
+#        <style>
+#        #MainMenu {visibility: hidden; }
+#        footer {visibility: hidden;}
+#        </style>
+#        """
 
 button = """
 <script src="https://cdn.customgpt.ai/js/chat.js"></script>
