@@ -40,7 +40,7 @@ components.html(
 <script src="https://cdn.customgpt.ai/js/embed.js" width="100%" height="500px" p_id="1824" p_key="50a7b1a9e4e384f4b1284a5aa074770f" div_id="customgpt_chat"></script>
 	"""
 )
-compoents.html(
+components.html(
 	"""
 	<script src="https://cdn.customgpt.ai/js/chat.js"></script>
 
