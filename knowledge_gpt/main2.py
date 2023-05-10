@@ -11,7 +11,25 @@ st.set_page_config(page_title="DhammaAI", page_icon="📖", layout="wide")
 st.header("📖DhammaAI")
 
 
+button = """
+<script src="https://cdn.customgpt.ai/js/chat.js"></script>
 
+	<script>window.onload = function () { CustomGPT.init({p_id: "1824", p_key: "50a7b1a9e4e384f4b1284a5aa074770f" }); };</script>"""
+
+html(button, height=70, width=220)
+
+st.markdown(
+    """
+    <style>
+        iframe[width="220"] {
+            position: fixed;
+            bottom: 60px;
+            right: 40px;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 # hide_default_format = """
 #        <style>
 #        #MainMenu {visibility: hidden; }
@@ -61,7 +79,6 @@ with col3:
 
 	<script>window.onload = function () { CustomGPT.init({p_id: "1824", p_key: "50a7b1a9e4e384f4b1284a5aa074770f" }); };</script>
 	""",
-	width=200,
 	height=800,
 	)
 
