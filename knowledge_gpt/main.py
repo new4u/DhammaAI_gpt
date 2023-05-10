@@ -2,7 +2,6 @@ import streamlit as st
 from PIL import Image
 import os
 from openai.error import OpenAIError
-import streamlit.components.v1 as components
 
 from knowledge_gpt.components.sidebar import sidebar
 from knowledge_gpt.utils import (
@@ -25,12 +24,7 @@ def clear_submit():
 st.set_page_config(page_title="DocGPT", page_icon="📖", layout="wide")
 st.header("📖DocGPT")
 
-components.html(
-   """
-<div id="customgpt_chat"></div>
-<script src="https://cdn.customgpt.ai/js/embed.js" width="100%" height="500px" p_id="1824" p_key="50a7b1a9e4e384f4b1284a5aa074770f" div_id="customgpt_chat"></script>
-	"""
-)
+
 
 hide_default_format = """
        <style>
