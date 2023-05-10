@@ -6,7 +6,8 @@ import streamlit.components.v1 as components
 from openai.error import OpenAIError
 
 st.set_page_config(page_title="DhammaAI", page_icon="📖", layout="wide")
-# st.header("📖DhammaAI")
+st.header("📖DhammaAI 点击右下角图标呼出问答机器人")
+
 # hide_default_format = """
 #        <style>
 #        #MainMenu {visibility: hidden; }
@@ -52,8 +53,9 @@ st.markdown(
 #     height=500,
 # )
 # # Display the image with text on top
-# st.write("Each document costs about $1 for OpenAI API call. Please consider pay to keep this service alive! Thank you!")
-# st.write("每篇文章调用OpenAI API的费用约为¥7人民币，请帮助支付以便我能够一直提供这个AI小程序，谢谢您！")
+st.write("Each document costs about $1 for OpenAI API call. Please consider pay to keep this service alive! Thank you!")
+st.write("邀请师兄帮忙测试，因为测试资源有限，请1目前容量有限每日仅限一次把机会让给更多师兄测试，2只问与法相关的问题，并告诉我问答效果，帮助反馈，3此链接仅供自己使用不外传。谢谢[合十]")
+
 
 # # Construct the file path dynamically
 # #image_path = os.path.abspath("docgpt.jpg")
