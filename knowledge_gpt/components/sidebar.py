@@ -16,17 +16,17 @@ def sidebar():
             "2. Ask a question about the document💬\n"
             "   Or you can ask DocGPT to give you some questions about the document💬\n"
         )
-       api_key_input = st.text_input(
-           "OpenAI API Key",
-           type="password",
-           placeholder="Paste your OpenAI API key here (sk-...)",
-           help="You can get your API key from https://platform.openai.com/account/api-keys",  
-           value=st.session_state.get("OPENAI_API_KEY", ""),
-       )
+#        api_key_input = st.text_input(
+#            "OpenAI API Key",
+#            type="password",
+#            placeholder="Paste your OpenAI API key here (sk-...)",
+#            help="You can get your API key from https://platform.openai.com/account/api-keys",  
+#            value=st.session_state.get("OPENAI_API_KEY", ""),
+#        )
 
-       if api_key_input:
-           set_openai_api_key(api_key_input)
-#         set_openai_api_key(st.secrets["OPENAI_API_KEY"]) #这个是从streamlit的环境变量读取
+#        if api_key_input:
+#            set_openai_api_key(api_key_input)
+# #         set_openai_api_key(st.secrets["OPENAI_API_KEY"]) #这个是从streamlit的环境变量读取
         
         st.markdown("---")
         st.markdown("# About")
