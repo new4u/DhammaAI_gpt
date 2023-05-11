@@ -46,14 +46,14 @@ st.markdown(
 #        """
 # st.markdown(hide_default_format, unsafe_allow_html=True)
 
-# components.html(
-#    """
-# <div id="customgpt_chat"></div>
+components.html(
+   """
+<div id="customgpt_chat"></div>
 
-# <script src="https://cdn.customgpt.ai/js/embed.js" width="100%" p_id="1824" p_key="50a7b1a9e4e384f4b1284a5aa074770f" div_id="customgpt_chat"></script>
-# 	""",
-#     height=500,
-# )
+<script src="https://cdn.customgpt.ai/js/embed.js" width="100%" height="500px" p_id="1824" p_key="50a7b1a9e4e384f4b1284a5aa074770f" div_id="customgpt_chat"></script>
+	""",
+    height=1000,
+)
 # # Display the image with text on top
 st.write("Each document costs about $1 for OpenAI API call. Please consider pay to keep this service alive! Thank you!")
 st.write("邀请师兄帮忙测试，因为测试资源有限，请1目前容量有限每日仅限一次把机会让给更多师兄测试，2只问与法相关的问题，并告诉我问答效果，帮助反馈，3此链接仅供自己使用不外传。谢谢[合十]")
