@@ -52,7 +52,7 @@ components.html(
 
 <script src="https://cdn.customgpt.ai/js/embed.js" width="100%" height="500px" p_id="1824" p_key="50a7b1a9e4e384f4b1284a5aa074770f" div_id="customgpt_chat"></script>
 	""",
-    height=1000,
+    height=600,
 )
 # # Display the image with text on top
 st.write("Each document costs about $1 for OpenAI API call. Please consider pay to keep this service alive! Thank you!")
