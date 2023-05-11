@@ -84,13 +84,24 @@ st.write("邀请师兄帮忙测试，因为测试资源有限，请1目前容量
 # with col2:
 #     st.image(image2, caption="PayPal", width=200)
 # # with col3:
-# # 	components.html(
-# # 	"""
-# # 	<script src="https://cdn.customgpt.ai/js/chat.js"></script>
+components.html(
+"""
+<button onclick="document.getElementById('feedback-form').style.display='block'">反馈</button>
 
-# 	<script>window.onload = function () { CustomGPT.init({p_id: "1824", p_key: "50a7b1a9e4e384f4b1284a5aa074770f" }); };</script>
-# 	""",
-# 	height=800,
-# 	)
+<div id="feedback-form" style="display:none;">
+<h2>反馈</h2>
+<form action="mailto:zhangpei.adam@gmail.com" method="post" enctype="text/plain">
+<label for="feedback">请提供反馈：</label>
+
+
+<textarea id="feedback" name="feedback" rows="5" cols="50"></textarea>
+
+
+<input type="submit" value="提交">
+<input type="reset" value="重置">
+</form>
+</div>
+"""
+)
 
 
