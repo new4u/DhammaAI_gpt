@@ -53,11 +53,11 @@ components.html(
     height=500,
 )
 
-st.write(" AI师兄v.2 收录了:1063篇隆波法谈和书籍,共计11869314中英泰俄等6中文字--**请注意,回答仅代表GPT-4的总结,并不是尊者原话** 详细内容,请点击并认真阅读下面提供的原文索引:＂Where did this answer come from＂谢谢!")
-st.write("如果出现回答问题不如法，或者程序错误，烦请师兄点击页面下方的反馈将问题提给我 1.目前容量有限每日仅限一次把机会让给更多师兄测试 2.只问与法相关的问题，并告诉我问答效果，帮助反馈 3.此链接仅供自己使用不外传。谢谢[合十]")
+st.write(" AI师兄v.2 收录了:1063篇隆波法谈和书籍,共计11869314中英泰俄等6中文字--**请注意,回答仅代表GPT-4的总结,并不是尊者原话** 详细内容,请点击并认真阅读下面提供的**原文出处索引:＂Where did this answer come from＂**谢谢!")
+st.write("1.目前容量有限每日仅限一次把机会让给更多师兄测试 2.只问与法相关的问题，并告诉我问答效果，帮助点几下方按钮反馈 3.此链接仅供自己使用不外传。谢谢[合十]")
 components.html(
 """
-<button onclick="document.getElementById('feedback-form').style.display='block'">反馈</button>
+<button onclick="document.getElementById('feedback-form').style.display='block'">如果出现回答问题不如法，或者程序错误，烦请师兄点击次处,将问题反馈给我 </button>
 
 <div id="feedback-form" style="display:none;">
 <h2>反馈</h2>
