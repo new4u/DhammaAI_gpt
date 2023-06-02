@@ -82,6 +82,23 @@ components.html(
 st.write("Each document costs about $1 for OpenAI API call. Please consider pay to keep this service alive! Thank you!")
 # st.write("邀请师兄帮忙测试，因为测试资源有限，请1目前容量有限每日仅限一次把机会让给更多师兄测试，2只问与法相关的问题，并告诉我问答效果，帮助反馈，3此链接仅供自己使用不外传。谢谢[合十]")
 
+components.html(
+   """
+   
+<div id="baidu"></div>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?10b74f0cd92b0cd66cf45366d22c653a";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+	""",
+    height=1,
+)
 
 # # Construct the file path dynamically
 # #image_path = os.path.abspath("docgpt.jpg")
