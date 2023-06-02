@@ -53,7 +53,10 @@ components.html(
     height=500,
 )
 
-st.write(" AI师兄v.2 收录了:1063篇隆波法谈和书籍,共计11869314中英泰俄等6中文字--**请注意,回答仅代表GPT-4的总结,并不是尊者原话** 详细内容,请点击并认真阅读下面提供的 **原文出处索引:＂Where did this answer come from＂** 谢谢!")
+st.write("DhammaAI v0.3 1359 Items Found View 1357 Items Indexed View 16143815 Words Indexed 89 Queries this month")
+st.write("+ 加上了2020-2023年的隆波youtube直播转译信息. 感谢谢笑辰,西木等师兄的帮助,感谢转录师兄们的发心工作!")
+
+st.write( "**请注意,回答仅代表GPT-4的总结,并不是尊者原话** 详细内容,请点击并认真阅读下面提供的 **原文出处索引:＂Where did this answer come from＂** 谢谢!")
 st.write("1.目前容量有限每日仅限一次把机会让给更多师兄测试 2.只问与法相关的问题，并告诉我问答效果，**帮助点击下方按钮反馈** 3.此链接仅供自己使用不外传。谢谢[合十]")
 components.html(
 """
