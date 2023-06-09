@@ -3,10 +3,10 @@ from PIL import Image
 import os
 # from knowledge_gpt.components.sidebar import sidebar
 import streamlit.components.v1 as components
-from openai.error import OpenAIError
+# from openai.error import OpenAIError
 
 st.set_page_config(page_title="new4uAI", page_icon="📖", layout="wide")
-st.header("扫描码或者联系小助手1259388进群")
+# st.header("扫描码或者联系小助手1259388进群")
 
 # hide_default_format = """
 #        <style>
