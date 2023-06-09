@@ -49,6 +49,7 @@ components.html(
    
 <div id="customgpt_chat"></div>
 <script src="https://cdn.customgpt.ai/js/embed.js" width="100%" height="500px" p_id="4650" p_key="a870e3adb5c26e1ef3a70e4588b6035a" div_id="customgpt_chat"></script>
+""",height=500,
 )
 
 components.html(
