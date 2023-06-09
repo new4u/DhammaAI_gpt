@@ -97,5 +97,5 @@ with col1:
      st.image(image1, caption="WeChat Pay", width=200)
 
 # Display the second image in the second column
- with col2:
+with col2:
      st.image(image2, caption="PayPal", width=200)
