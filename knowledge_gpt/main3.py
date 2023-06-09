@@ -6,7 +6,7 @@ import streamlit.components.v1 as components
 from openai.error import OpenAIError
 
 st.set_page_config(page_title="new4uAI", page_icon="📖", layout="wide")
-st.header("【你也可以拥有分身】扫描微信进群 💻定制聊天机器人: https://customgpt.new4u.top/")
+st.header("扫描码或者联系小助手1259388进群")
 
 # hide_default_format = """
 #        <style>
