@@ -79,16 +79,13 @@ st.write("Each document costs about $1 for OpenAI API call. Please consider pay 
 # # Construct the file path dynamically
 # #image_path = os.path.abspath("docgpt.jpg")
 
-# # Load the image
-# #img = Image.open(image_path)
-# #img = Image.open("knowledge_gpt/wechatpay.jpg")
+
 
 # Load the images
 image1 = Image.open("knowledge_gpt/wechatqrcode.jpg")
 image2 = Image.open("knowledge_gpt/paypalqrcode.png")
 
 
-st.image(img, caption=None, width=200)
 # Divide the app page into two columns
 col1, col2= st.columns(2)
 
