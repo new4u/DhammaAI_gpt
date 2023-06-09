@@ -54,7 +54,7 @@ components.html(
 
 components.html(
 """
-<button onclick="document.getElementById('feedback-form').style.display='block'">任何问题都可以联系我 </button>
+<button onclick="document.getElementById('feedback-form').style.display='block'">任何问题都可以联系我,或者扫描二维码进群 </button>
 
 <div id="feedback-form" style="display:none;">
 <h2>反馈</h2>
