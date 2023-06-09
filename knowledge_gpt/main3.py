@@ -5,7 +5,7 @@ import os
 import streamlit.components.v1 as components
 from openai.error import OpenAIError
 
-st.set_page_config(page_title="DhammaAI", page_icon="📖", layout="wide")
+st.set_page_config(page_title="new4uAI", page_icon="📖", layout="wide")
 # st.header("点击右下角图标呼出问答机器人")
 
 # hide_default_format = """
@@ -83,19 +83,19 @@ st.write("Each document costs about $1 for OpenAI API call. Please consider pay 
 # #img = Image.open(image_path)
 # #img = Image.open("knowledge_gpt/wechatpay.jpg")
 
-# # Load the images
-# image1 = Image.open("knowledge_gpt/wechatqrcode.jpg")
-# image2 = Image.open("knowledge_gpt/paypalqrcode.png")
+# Load the images
+image1 = Image.open("knowledge_gpt/wechatqrcode.jpg")
+image2 = Image.open("knowledge_gpt/paypalqrcode.png")
 
 
 st.image(img, caption=None, width=200)
-Divide the app page into two columns
+# Divide the app page into two columns
 col1, col2= st.columns(2)
 
-Display the first image in the first column
+# Display the first image in the first column
 with col1:
      st.image(image1, caption="WeChat Pay", width=200)
 
-Display the second image in the second column
+# Display the second image in the second column
  with col2:
      st.image(image2, caption="PayPal", width=200)
